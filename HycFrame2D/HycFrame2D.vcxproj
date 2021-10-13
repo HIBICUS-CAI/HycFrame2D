@@ -162,21 +162,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AimPointAction.cpp" />
-    <ClCompile Include="ArrowAction.cpp" />
     <ClCompile Include="BasicInit_LowLevel\DxHelper.cpp" />
     <ClCompile Include="BasicInit_LowLevel\DxProcess.cpp" />
     <ClCompile Include="BasicInit_LowLevel\LowLevelCpp.cpp" />
     <ClCompile Include="BasicInit_LowLevel\PrintLog.cpp" />
-    <ClCompile Include="BowAction.cpp" />
-    <ClCompile Include="BowLoadingFade.cpp" />
-    <ClCompile Include="CloudAction.cpp" />
-    <ClCompile Include="ExtraGods.cpp" />
-    <ClCompile Include="ExtraLife.cpp" />
-    <ClCompile Include="ExtraLoadingFade.cpp" />
-    <ClCompile Include="ExtraPlayerInput.cpp" />
-    <ClCompile Include="ExtraSunManager.cpp" />
-    <ClCompile Include="FieldAction.cpp" />
     <ClCompile Include="FuncsRegister.cpp" />
     <ClCompile Include="HighFrame\AAnimateComponent.cpp" />
     <ClCompile Include="HighFrame\ACollisionComponent.cpp" />
@@ -204,36 +193,17 @@
     <ClCompile Include="HighFrame\UTextComponent.cpp" />
     <ClCompile Include="HighFrame\UTransformComponent.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="ManualAction.cpp" />
     <ClCompile Include="MiddleFunctions\ControllerHelper.cpp" />
     <ClCompile Include="MiddleFunctions\JsonHelper.cpp" />
     <ClCompile Include="MiddleFunctions\SoundHelper.cpp" />
     <ClCompile Include="MiddleFunctions\SpriteHelper.cpp" />
     <ClCompile Include="MiddleFunctions\TextureHelper.cpp" />
-    <ClCompile Include="ModeSelectButton.cpp" />
-    <ClCompile Include="ResultLoadingFade.cpp" />
-    <ClCompile Include="ResultSelectInput.cpp" />
-    <ClCompile Include="StoryAction.cpp" />
-    <ClCompile Include="SunsManager.cpp" />
-    <ClCompile Include="TempBtnCmd.cpp" />
-    <ClCompile Include="TitleButton.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AimPointAction.h" />
-    <ClInclude Include="ArrowAction.h" />
     <ClInclude Include="BasicInit_LowLevel\DxHelper.h" />
     <ClInclude Include="BasicInit_LowLevel\DxProcess.h" />
     <ClInclude Include="BasicInit_LowLevel\main.h" />
     <ClInclude Include="BasicInit_LowLevel\PrintLog.h" />
-    <ClInclude Include="BowAction.h" />
-    <ClInclude Include="BowLoadingFade.h" />
-    <ClInclude Include="CloudAction.h" />
-    <ClInclude Include="ExtraGods.h" />
-    <ClInclude Include="ExtraLife.h" />
-    <ClInclude Include="ExtraLoadingFade.h" />
-    <ClInclude Include="ExtraPlayerInput.h" />
-    <ClInclude Include="ExtraSunManager.h" />
-    <ClInclude Include="FieldAction.h" />
     <ClInclude Include="FuncsResigter.h" />
     <ClInclude Include="HighFrame\AAnimateComponent.h" />
     <ClInclude Include="HighFrame\ACollisionComponent.h" />
@@ -263,7 +233,6 @@
     <ClInclude Include="HighFrame\USpriteComponent.h" />
     <ClInclude Include="HighFrame\UTextComponent.h" />
     <ClInclude Include="HighFrame\UTransformComponent.h" />
-    <ClInclude Include="ManualAction.h" />
     <ClInclude Include="MiddleFunctions\controller.h" />
     <ClInclude Include="MiddleFunctions\ControllerHelper.h" />
     <ClInclude Include="MiddleFunctions\json.h" />
@@ -274,13 +243,6 @@
     <ClInclude Include="MiddleFunctions\SpriteHelper.h" />
     <ClInclude Include="MiddleFunctions\texture.h" />
     <ClInclude Include="MiddleFunctions\TextureHelper.h" />
-    <ClInclude Include="ModeSelectButton.h" />
-    <ClInclude Include="ResultLoadingFade.h" />
-    <ClInclude Include="ResultSelectInput.h" />
-    <ClInclude Include="StoryAction.h" />
-    <ClInclude Include="SunsManager.h" />
-    <ClInclude Include="TempBtnCmd.h" />
-    <ClInclude Include="TitleButton.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
