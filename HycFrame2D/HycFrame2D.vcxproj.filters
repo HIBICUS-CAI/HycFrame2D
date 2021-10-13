@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="00_BasicFunc">
+      <UniqueIdentifier>{ff3fcc63-63bc-420b-ace7-1246478202ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_MiddleFunc">
+      <UniqueIdentifier>{85c00788-5a06-46c1-8167-c4c3f2e7725d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_FrameContent">
+      <UniqueIdentifier>{05859a53-c28e-4599-8efc-2b4534bdf5a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_ObjectFunc">
+      <UniqueIdentifier>{477d314c-c1e0-4263-b585-0907439015ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_FrameContent\Common">
+      <UniqueIdentifier>{d7b9960f-fb66-4cad-8f06-7e6547403aa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_FrameContent\Component">
+      <UniqueIdentifier>{5da43d38-45c1-4a15-851f-79a67fde2928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_FrameContent\Factory">
+      <UniqueIdentifier>{53651068-4e21-44fd-aa44-c1d7b65cf758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_FrameContent\Object">
+      <UniqueIdentifier>{4aeaf7c6-9aef-4585-9c55-b87cf8889699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_FrameContent\Root">
+      <UniqueIdentifier>{93d47573-d7d6-48f9-a698-6cc62bef26fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_FrameContent\Scene">
+      <UniqueIdentifier>{1026aeed-66c4-4e66-a681-4686b9607b5c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BasicInit_LowLevel\DxHelper.cpp">
+      <Filter>00_BasicFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicInit_LowLevel\DxProcess.cpp">
+      <Filter>00_BasicFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicInit_LowLevel\LowLevelCpp.cpp">
+      <Filter>00_BasicFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicInit_LowLevel\PrintLog.cpp">
+      <Filter>00_BasicFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="MiddleFunctions\ControllerHelper.cpp">
+      <Filter>01_MiddleFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="MiddleFunctions\JsonHelper.cpp">
+      <Filter>01_MiddleFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="MiddleFunctions\SoundHelper.cpp">
+      <Filter>01_MiddleFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="MiddleFunctions\SpriteHelper.cpp">
+      <Filter>01_MiddleFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="MiddleFunctions\TextureHelper.cpp">
+      <Filter>01_MiddleFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\AAnimateComponent.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\ACollisionComponent.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\AComponent.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\AInputComponent.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\AInteractionComponent.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\ASpriteComponent.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\ATimerComponent.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\ATransformComponent.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\Component.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\UBtnMapComponent.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\UComponent.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\UInputComponent.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\UInteractionComponent.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\USpriteComponent.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\UTextComponent.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\UTransformComponent.cpp">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\ObjectFactory.cpp">
+      <Filter>02_FrameContent\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\PropertyManager.cpp">
+      <Filter>02_FrameContent\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\PropertyNode.cpp">
+      <Filter>02_FrameContent\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\ActorObject.cpp">
+      <Filter>02_FrameContent\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\Object.cpp">
+      <Filter>02_FrameContent\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\UiObject.cpp">
+      <Filter>02_FrameContent\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\RootSystem.cpp">
+      <Filter>02_FrameContent\Root</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\SceneManager.cpp">
+      <Filter>02_FrameContent\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFrame\SceneNode.cpp">
+      <Filter>02_FrameContent\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AimPointAction.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrowAction.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="BowAction.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="BowLoadingFade.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="CloudAction.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtraGods.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtraLife.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtraLoadingFade.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtraPlayerInput.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtraSunManager.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldAction.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualAction.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="ModeSelectButton.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultLoadingFade.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultSelectInput.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="StoryAction.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="SunsManager.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="TempBtnCmd.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleButton.cpp">
+      <Filter>03_ObjectFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncsRegister.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BasicInit_LowLevel\DxHelper.h">
+      <Filter>00_BasicFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicInit_LowLevel\DxProcess.h">
+      <Filter>00_BasicFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicInit_LowLevel\main.h">
+      <Filter>00_BasicFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicInit_LowLevel\PrintLog.h">
+      <Filter>00_BasicFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="MiddleFunctions\controller.h">
+      <Filter>01_MiddleFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="MiddleFunctions\ControllerHelper.h">
+      <Filter>01_MiddleFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="MiddleFunctions\json.h">
+      <Filter>01_MiddleFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="MiddleFunctions\JsonHelper.h">
+      <Filter>01_MiddleFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="MiddleFunctions\sound.h">
+      <Filter>01_MiddleFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="MiddleFunctions\SoundHelper.h">
+      <Filter>01_MiddleFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="MiddleFunctions\sprite.h">
+      <Filter>01_MiddleFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="MiddleFunctions\SpriteHelper.h">
+      <Filter>01_MiddleFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="MiddleFunctions\texture.h">
+      <Filter>01_MiddleFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="MiddleFunctions\TextureHelper.h">
+      <Filter>01_MiddleFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\Actor_all.h">
+      <Filter>02_FrameContent\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\HFCommon.h">
+      <Filter>02_FrameContent\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\Ui_all.h">
+      <Filter>02_FrameContent\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\AAnimateComponent.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\ACollisionComponent.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\AComponent.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\AInputComponent.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\AInteractionComponent.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\ASpriteComponent.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\ATimerComponent.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\ATransformComponent.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\Component.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\UBtnMapComponent.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\UComponent.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\UInputComponent.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\UInteractionComponent.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\USpriteComponent.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\UTextComponent.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\UTransformComponent.h">
+      <Filter>02_FrameContent\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\ObjectFactory.h">
+      <Filter>02_FrameContent\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\PropertyManager.h">
+      <Filter>02_FrameContent\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\PropertyNode.h">
+      <Filter>02_FrameContent\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\ActorObject.h">
+      <Filter>02_FrameContent\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\Object.h">
+      <Filter>02_FrameContent\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\UiObject.h">
+      <Filter>02_FrameContent\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\RootSystem.h">
+      <Filter>02_FrameContent\Root</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\SceneManager.h">
+      <Filter>02_FrameContent\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFrame\SceneNode.h">
+      <Filter>02_FrameContent\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AimPointAction.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrowAction.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="BowAction.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="BowLoadingFade.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="CloudAction.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtraGods.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtraLife.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtraLoadingFade.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtraPlayerInput.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtraSunManager.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldAction.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualAction.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="ModeSelectButton.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultLoadingFade.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultSelectInput.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="StoryAction.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="SunsManager.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="TempBtnCmd.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleButton.h">
+      <Filter>03_ObjectFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncsResigter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

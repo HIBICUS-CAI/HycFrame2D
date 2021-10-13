@@ -1,0 +1,818 @@
+{
+    "scene-name": "title-scene",
+    "camera": [
+        0.0,
+        0.0,
+        1920.0,
+        1080.0
+    ],
+    "sound": [
+        {
+            "name": "bgm-bow",
+            "path": "rom:/Assets/Sounds/bgm-bow.wav"
+        },
+        {
+            "name": "bgm-extra",
+            "path": "rom:/Assets/Sounds/bgm-extra.wav"
+        },
+        {
+            "name": "bgm-fail",
+            "path": "rom:/Assets/Sounds/bgm-fail.wav"
+        },
+        {
+            "name": "bgm-success",
+            "path": "rom:/Assets/Sounds/bgm-success.wav"
+        },
+        {
+            "name": "bgm-title",
+            "path": "rom:/Assets/Sounds/bgm-title.wav"
+        },
+        {
+            "name": "se-boom",
+            "path": "rom:/Assets/Sounds/se-boom.wav"
+        },
+        {
+            "name": "se-change",
+            "path": "rom:/Assets/Sounds/se-change.wav"
+        },
+        {
+            "name": "se-choose",
+            "path": "rom:/Assets/Sounds/se-choose.wav"
+        },
+        {
+            "name": "se-shoot",
+            "path": "rom:/Assets/Sounds/se-shoot.wav"
+        }
+    ],
+    "actor": [
+        {
+            "actor-name": "title-bg-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -10,
+                    "texture-path": "rom:/Assets/Textures/bg-title.png",
+                    "texture-width": 1920.0,
+                    "texture-height": 1080.0
+                }
+            ]
+        },
+        {
+            "actor-name": "title-name-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        -280.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -5,
+                    "texture-path": "rom:/Assets/Textures/title-name.png",
+                    "texture-width": 1200.0,
+                    "texture-height": 500.0
+                }
+            ]
+        },
+        {
+            "actor-name": "button-tur-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        150.0,
+                        350.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -5,
+                    "texture-path": "rom:/Assets/Textures/ui-tur.png",
+                    "texture-width": 1200.0,
+                    "texture-height": 500.0
+                }
+            ]
+        },
+        {
+            "actor-name": "loading-interac-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "interaction",
+                    "update-order": 0,
+                    "init-func-name": "TitleLoadFadeInit",
+                    "update-func-name": "TitleLoadFadeUpdate",
+                    "destory-func-name": "TitleLoadFadeDestory"
+                }
+            ]
+        },
+        {
+            "actor-name": "btn-start-ani-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 0,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 300.0,
+                    "texture-height": 150.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "default",
+                            "animate-path": "rom:/Assets/Textures/btn1-notselected.png",
+                            "animate-stride": [
+                                1.0,
+                                0.5
+                            ],
+                            "max-count": 2,
+                            "repeat-flag": false,
+                            "frame-time": 0.05
+                        },
+                        {
+                            "animate-name": "selected",
+                            "animate-path": "rom:/Assets/Textures/btn1-selected.png",
+                            "animate-stride": [
+                                0.5,
+                                0.25
+                            ],
+                            "max-count": 8,
+                            "repeat-flag": false,
+                            "frame-time": 0.05
+                        }
+                    ],
+                    "init-animate": "default"
+                }
+            ]
+        },
+        {
+            "actor-name": "btn-manual-ani-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        130.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 0,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 300.0,
+                    "texture-height": 150.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "default",
+                            "animate-path": "rom:/Assets/Textures/btn1-notselected.png",
+                            "animate-stride": [
+                                1.0,
+                                0.5
+                            ],
+                            "max-count": 2,
+                            "repeat-flag": false,
+                            "frame-time": 0.05
+                        },
+                        {
+                            "animate-name": "selected",
+                            "animate-path": "rom:/Assets/Textures/btn1-selected.png",
+                            "animate-stride": [
+                                0.5,
+                                0.25
+                            ],
+                            "max-count": 8,
+                            "repeat-flag": false,
+                            "frame-time": 0.05
+                        }
+                    ],
+                    "init-animate": "default"
+                }
+            ]
+        },
+        {
+            "actor-name": "btn-story-ani-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        260.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 0,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 300.0,
+                    "texture-height": 150.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "default",
+                            "animate-path": "rom:/Assets/Textures/btn1-notselected.png",
+                            "animate-stride": [
+                                1.0,
+                                0.5
+                            ],
+                            "max-count": 2,
+                            "repeat-flag": false,
+                            "frame-time": 0.05
+                        },
+                        {
+                            "animate-name": "selected",
+                            "animate-path": "rom:/Assets/Textures/btn1-selected.png",
+                            "animate-stride": [
+                                0.5,
+                                0.25
+                            ],
+                            "max-count": 8,
+                            "repeat-flag": false,
+                            "frame-time": 0.05
+                        }
+                    ],
+                    "init-animate": "default"
+                }
+            ]
+        },
+        {
+            "actor-name": "btn-quit-ani-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        390.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 0,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 300.0,
+                    "texture-height": 150.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "default",
+                            "animate-path": "rom:/Assets/Textures/btn1-notselected.png",
+                            "animate-stride": [
+                                1.0,
+                                0.5
+                            ],
+                            "max-count": 2,
+                            "repeat-flag": false,
+                            "frame-time": 0.05
+                        },
+                        {
+                            "animate-name": "selected",
+                            "animate-path": "rom:/Assets/Textures/btn1-selected.png",
+                            "animate-stride": [
+                                0.5,
+                                0.25
+                            ],
+                            "max-count": 8,
+                            "repeat-flag": false,
+                            "frame-time": 0.05
+                        }
+                    ],
+                    "init-animate": "default"
+                }
+            ]
+        }
+    ],
+    "ui": [
+        {
+            "ui-name": "start-btn-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 1.0,
+                    "texture-height": 1.0
+                },
+                {
+                    "type": "text",
+                    "update-order": 0,
+                    "moji-path": "rom:/Assets/Textures/moji.png",
+                    "init-text": "井中仄",
+                    "init-size": [
+                        30.0,
+                        30.0
+                    ],
+                    "init-position": [
+                        -30.0,
+                        0.0,
+                        0.0
+                    ],
+                    "init-color": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "ButtonSelectInput"
+                },
+                {
+                    "type": "btnmap",
+                    "update-order": 0,
+                    "down": "manual-btn-ui",
+                    "default-select": true
+                }
+            ]
+        },
+        {
+            "ui-name": "manual-btn-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 1.0,
+                    "texture-height": 1.0
+                },
+                {
+                    "type": "text",
+                    "update-order": 0,
+                    "moji-path": "rom:/Assets/Textures/moji.png",
+                    "init-text": "六勾戶中",
+                    "init-size": [
+                        30.0,
+                        30.0
+                    ],
+                    "init-position": [
+                        -45.0,
+                        130.0,
+                        0.0
+                    ],
+                    "init-color": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "ButtonSelectInput"
+                },
+                {
+                    "type": "btnmap",
+                    "update-order": 0,
+                    "up": "start-btn-ui",
+                    "down": "story-btn-ui",
+                    "default-select": false
+                }
+            ]
+        },
+        {
+            "ui-name": "story-btn-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 1.0,
+                    "texture-height": 1.0
+                },
+                {
+                    "type": "text",
+                    "update-order": 0,
+                    "moji-path": "rom:/Assets/Textures/moji.png",
+                    "init-text": "手及井奄凶曰",
+                    "init-size": [
+                        30.0,
+                        30.0
+                    ],
+                    "init-position": [
+                        -75.0,
+                        260.0,
+                        0.0
+                    ],
+                    "init-color": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "ButtonSelectInput"
+                },
+                {
+                    "type": "btnmap",
+                    "update-order": 0,
+                    "up": "manual-btn-ui",
+                    "down": "quit-btn-ui",
+                    "default-select": false
+                }
+            ]
+        },
+        {
+            "ui-name": "quit-btn-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 1.0,
+                    "texture-height": 1.0
+                },
+                {
+                    "type": "text",
+                    "update-order": 0,
+                    "moji-path": "rom:/Assets/Textures/moji.png",
+                    "init-text": "凶中仄文勾",
+                    "init-size": [
+                        30.0,
+                        30.0
+                    ],
+                    "init-position": [
+                        -60.0,
+                        390.0,
+                        0.0
+                    ],
+                    "init-color": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "ButtonSelectInput"
+                },
+                {
+                    "type": "btnmap",
+                    "update-order": 0,
+                    "up": "story-btn-ui",
+                    "default-select": false
+                }
+            ]
+        },
+        {
+            "ui-name": "loadfade-left-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 10,
+                    "texture-path": "rom:/Assets/Textures/load-cloud-left.png",
+                    "texture-width": 1920.0,
+                    "texture-height": 1080.0
+                }
+            ]
+        },
+        {
+            "ui-name": "loadfade-right-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 10,
+                    "texture-path": "rom:/Assets/Textures/load-cloud-right.png",
+                    "texture-width": 1920.0,
+                    "texture-height": 1080.0
+                }
+            ]
+        }
+    ]
+}

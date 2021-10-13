@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{6b3f882a-e313-44f3-95c6-43f94b054465}</ProjectGuid>
+    <RootNamespace>HycFrame2D</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)02_DTK\Inc;$(SolutionDir)03_InputDevice;$(SolutionDir)04_WindowManager;$(ProjectDir)HighFrame;$(ProjectDir)MiddleFunctions;$(ProjectDir)BasicInit_LowLevel;$(ProjectDir)ThirdParty\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>xinput9_1_0.lib;d3d11.lib;d3dcompiler.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy /e /r /y $(ProjectDir)rom $(TargetDir)rom\</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)02_DTK\Inc;$(SolutionDir)03_InputDevice;$(SolutionDir)04_WindowManager;$(ProjectDir)HighFrame;$(ProjectDir)MiddleFunctions;$(ProjectDir)BasicInit_LowLevel;$(ProjectDir)ThirdParty\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>xinput9_1_0.lib;d3d11.lib;d3dcompiler.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy /e /r /y $(ProjectDir)rom $(TargetDir)rom\</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\02_DTK\DirectXTK_Desktop_2019_Win10.vcxproj">
+      <Project>{e0b52ae7-e160-4d32-bf3f-910b785e5a8e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\03_InputDevice\03_InputDevice.vcxproj">
+      <Project>{59009cc8-769f-4bdb-9334-a8c3f450fa68}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\04_WindowManager\04_WindowManager.vcxproj">
+      <Project>{948ff8dd-8fb2-4e3e-8ab2-f9f702f9c501}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AimPointAction.cpp" />
+    <ClCompile Include="ArrowAction.cpp" />
+    <ClCompile Include="BasicInit_LowLevel\DxHelper.cpp" />
+    <ClCompile Include="BasicInit_LowLevel\DxProcess.cpp" />
+    <ClCompile Include="BasicInit_LowLevel\LowLevelCpp.cpp" />
+    <ClCompile Include="BasicInit_LowLevel\PrintLog.cpp" />
+    <ClCompile Include="BowAction.cpp" />
+    <ClCompile Include="BowLoadingFade.cpp" />
+    <ClCompile Include="CloudAction.cpp" />
+    <ClCompile Include="ExtraGods.cpp" />
+    <ClCompile Include="ExtraLife.cpp" />
+    <ClCompile Include="ExtraLoadingFade.cpp" />
+    <ClCompile Include="ExtraPlayerInput.cpp" />
+    <ClCompile Include="ExtraSunManager.cpp" />
+    <ClCompile Include="FieldAction.cpp" />
+    <ClCompile Include="FuncsRegister.cpp" />
+    <ClCompile Include="HighFrame\AAnimateComponent.cpp" />
+    <ClCompile Include="HighFrame\ACollisionComponent.cpp" />
+    <ClCompile Include="HighFrame\AComponent.cpp" />
+    <ClCompile Include="HighFrame\ActorObject.cpp" />
+    <ClCompile Include="HighFrame\AInputComponent.cpp" />
+    <ClCompile Include="HighFrame\AInteractionComponent.cpp" />
+    <ClCompile Include="HighFrame\ASpriteComponent.cpp" />
+    <ClCompile Include="HighFrame\ATimerComponent.cpp" />
+    <ClCompile Include="HighFrame\ATransformComponent.cpp" />
+    <ClCompile Include="HighFrame\Component.cpp" />
+    <ClCompile Include="HighFrame\Object.cpp" />
+    <ClCompile Include="HighFrame\ObjectFactory.cpp" />
+    <ClCompile Include="HighFrame\PropertyManager.cpp" />
+    <ClCompile Include="HighFrame\PropertyNode.cpp" />
+    <ClCompile Include="HighFrame\RootSystem.cpp" />
+    <ClCompile Include="HighFrame\SceneManager.cpp" />
+    <ClCompile Include="HighFrame\SceneNode.cpp" />
+    <ClCompile Include="HighFrame\UBtnMapComponent.cpp" />
+    <ClCompile Include="HighFrame\UComponent.cpp" />
+    <ClCompile Include="HighFrame\UInputComponent.cpp" />
+    <ClCompile Include="HighFrame\UInteractionComponent.cpp" />
+    <ClCompile Include="HighFrame\UiObject.cpp" />
+    <ClCompile Include="HighFrame\USpriteComponent.cpp" />
+    <ClCompile Include="HighFrame\UTextComponent.cpp" />
+    <ClCompile Include="HighFrame\UTransformComponent.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="ManualAction.cpp" />
+    <ClCompile Include="MiddleFunctions\ControllerHelper.cpp" />
+    <ClCompile Include="MiddleFunctions\JsonHelper.cpp" />
+    <ClCompile Include="MiddleFunctions\SoundHelper.cpp" />
+    <ClCompile Include="MiddleFunctions\SpriteHelper.cpp" />
+    <ClCompile Include="MiddleFunctions\TextureHelper.cpp" />
+    <ClCompile Include="ModeSelectButton.cpp" />
+    <ClCompile Include="ResultLoadingFade.cpp" />
+    <ClCompile Include="ResultSelectInput.cpp" />
+    <ClCompile Include="StoryAction.cpp" />
+    <ClCompile Include="SunsManager.cpp" />
+    <ClCompile Include="TempBtnCmd.cpp" />
+    <ClCompile Include="TitleButton.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AimPointAction.h" />
+    <ClInclude Include="ArrowAction.h" />
+    <ClInclude Include="BasicInit_LowLevel\DxHelper.h" />
+    <ClInclude Include="BasicInit_LowLevel\DxProcess.h" />
+    <ClInclude Include="BasicInit_LowLevel\main.h" />
+    <ClInclude Include="BasicInit_LowLevel\PrintLog.h" />
+    <ClInclude Include="BowAction.h" />
+    <ClInclude Include="BowLoadingFade.h" />
+    <ClInclude Include="CloudAction.h" />
+    <ClInclude Include="ExtraGods.h" />
+    <ClInclude Include="ExtraLife.h" />
+    <ClInclude Include="ExtraLoadingFade.h" />
+    <ClInclude Include="ExtraPlayerInput.h" />
+    <ClInclude Include="ExtraSunManager.h" />
+    <ClInclude Include="FieldAction.h" />
+    <ClInclude Include="FuncsResigter.h" />
+    <ClInclude Include="HighFrame\AAnimateComponent.h" />
+    <ClInclude Include="HighFrame\ACollisionComponent.h" />
+    <ClInclude Include="HighFrame\AComponent.h" />
+    <ClInclude Include="HighFrame\ActorObject.h" />
+    <ClInclude Include="HighFrame\Actor_all.h" />
+    <ClInclude Include="HighFrame\AInputComponent.h" />
+    <ClInclude Include="HighFrame\AInteractionComponent.h" />
+    <ClInclude Include="HighFrame\ASpriteComponent.h" />
+    <ClInclude Include="HighFrame\ATimerComponent.h" />
+    <ClInclude Include="HighFrame\ATransformComponent.h" />
+    <ClInclude Include="HighFrame\Component.h" />
+    <ClInclude Include="HighFrame\HFCommon.h" />
+    <ClInclude Include="HighFrame\Object.h" />
+    <ClInclude Include="HighFrame\ObjectFactory.h" />
+    <ClInclude Include="HighFrame\PropertyManager.h" />
+    <ClInclude Include="HighFrame\PropertyNode.h" />
+    <ClInclude Include="HighFrame\RootSystem.h" />
+    <ClInclude Include="HighFrame\SceneManager.h" />
+    <ClInclude Include="HighFrame\SceneNode.h" />
+    <ClInclude Include="HighFrame\UBtnMapComponent.h" />
+    <ClInclude Include="HighFrame\UComponent.h" />
+    <ClInclude Include="HighFrame\UInputComponent.h" />
+    <ClInclude Include="HighFrame\UInteractionComponent.h" />
+    <ClInclude Include="HighFrame\UiObject.h" />
+    <ClInclude Include="HighFrame\Ui_all.h" />
+    <ClInclude Include="HighFrame\USpriteComponent.h" />
+    <ClInclude Include="HighFrame\UTextComponent.h" />
+    <ClInclude Include="HighFrame\UTransformComponent.h" />
+    <ClInclude Include="ManualAction.h" />
+    <ClInclude Include="MiddleFunctions\controller.h" />
+    <ClInclude Include="MiddleFunctions\ControllerHelper.h" />
+    <ClInclude Include="MiddleFunctions\json.h" />
+    <ClInclude Include="MiddleFunctions\JsonHelper.h" />
+    <ClInclude Include="MiddleFunctions\sound.h" />
+    <ClInclude Include="MiddleFunctions\SoundHelper.h" />
+    <ClInclude Include="MiddleFunctions\sprite.h" />
+    <ClInclude Include="MiddleFunctions\SpriteHelper.h" />
+    <ClInclude Include="MiddleFunctions\texture.h" />
+    <ClInclude Include="MiddleFunctions\TextureHelper.h" />
+    <ClInclude Include="ModeSelectButton.h" />
+    <ClInclude Include="ResultLoadingFade.h" />
+    <ClInclude Include="ResultSelectInput.h" />
+    <ClInclude Include="StoryAction.h" />
+    <ClInclude Include="SunsManager.h" />
+    <ClInclude Include="TempBtnCmd.h" />
+    <ClInclude Include="TitleButton.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

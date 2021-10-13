@@ -1,0 +1,751 @@
+{
+    "scene-name": "mode-select-scene",
+    "camera": [
+        0.0,
+        0.0,
+        1920.0,
+        1080.0
+    ],
+    "actor": [
+        {
+            "actor-name": "mode-bg-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -10,
+                    "texture-path": "rom:/Assets/Textures/bg-mode.png",
+                    "texture-width": 1920.0,
+                    "texture-height": 1080.0
+                }
+            ]
+        },
+        {
+            "actor-name": "loading-interac-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "interaction",
+                    "update-order": 0,
+                    "init-func-name": "SelectLoadFadeInit",
+                    "update-func-name": "SelectLoadFadeUpdate",
+                    "destory-func-name": "SelectLoadFadeDestory"
+                }
+            ]
+        },
+        {
+            "actor-name": "joycon-intro-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        -400.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/joycon-intro.png",
+                    "texture-width": 1200.0,
+                    "texture-height": 200.0
+                }
+            ]
+        },
+        {
+            "actor-name": "button-intro-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        -400.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/button-intro.png",
+                    "texture-width": 1200.0,
+                    "texture-height": 200.0
+                }
+            ]
+        },
+        {
+            "actor-name": "extra-intro-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        -400.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/extra-intro.png",
+                    "texture-width": 1200.0,
+                    "texture-height": 200.0
+                }
+            ]
+        }
+    ],
+    "ui": [
+        {
+            "ui-name": "intro-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        2200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 100.0,
+                    "texture-height": 100.0
+                },
+                {
+                    "type": "text",
+                    "update-order": 0,
+                    "moji-path": "rom:/Assets/Textures/moji.png",
+                    "init-text": "¥±©a©`¥à¥â©`¥È©a\n\n\n¤Ê¤ó¤¤¤È©a",
+                    "init-size": [
+                        90.0,
+                        90.0
+                    ],
+                    "init-position": [
+                        -850.0,
+                        -220.0,
+                        0.0
+                    ],
+                    "init-color": [
+                        0.0,
+                        0.0,
+                        0.3,
+                        1.0
+                    ]
+                }
+            ]
+        },
+        {
+            "ui-name": "easy-mode-btn-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        -500.0,
+                        200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/btn1.png",
+                    "texture-width": 400.0,
+                    "texture-height": 200.0
+                },
+                {
+                    "type": "text",
+                    "update-order": 0,
+                    "moji-path": "rom:/Assets/Textures/moji.png",
+                    "init-text": "¤«¤ó¤¿¤ó",
+                    "init-size": [
+                        40.0,
+                        40.0
+                    ],
+                    "init-position": [
+                        -560.0,
+                        200.0,
+                        0.0
+                    ],
+                    "init-color": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "ModeSelectInput"
+                },
+                {
+                    "type": "btnmap",
+                    "update-order": 0,
+                    "right": "normal-mode-btn-ui",
+                    "default-select": false
+                }
+            ]
+        },
+        {
+            "ui-name": "normal-mode-btn-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/btn1.png",
+                    "texture-width": 400.0,
+                    "texture-height": 200.0
+                },
+                {
+                    "type": "text",
+                    "update-order": 0,
+                    "moji-path": "rom:/Assets/Textures/moji.png",
+                    "init-text": "¤Õ¤Ä¤¦",
+                    "init-size": [
+                        40.0,
+                        40.0
+                    ],
+                    "init-position": [
+                        -40.0,
+                        200.0,
+                        0.0
+                    ],
+                    "init-color": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "ModeSelectInput"
+                },
+                {
+                    "type": "btnmap",
+                    "update-order": 0,
+                    "left": "easy-mode-btn-ui",
+                    "right": "hard-mode-btn-ui",
+                    "default-select": false
+                }
+            ]
+        },
+        {
+            "ui-name": "hard-mode-btn-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        500.0,
+                        200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/btn1.png",
+                    "texture-width": 400.0,
+                    "texture-height": 200.0
+                },
+                {
+                    "type": "text",
+                    "update-order": 0,
+                    "moji-path": "rom:/Assets/Textures/moji.png",
+                    "init-text": "¤³¤ó¤Ê¤ó",
+                    "init-size": [
+                        40.0,
+                        40.0
+                    ],
+                    "init-position": [
+                        440.0,
+                        200.0,
+                        0.0
+                    ],
+                    "init-color": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "ModeSelectInput"
+                },
+                {
+                    "type": "btnmap",
+                    "update-order": 0,
+                    "left": "normal-mode-btn-ui",
+                    "default-select": false
+                }
+            ]
+        },
+        {
+            "ui-name": "joycon-mode-btn-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        -500.0,
+                        -100.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/btn1.png",
+                    "texture-width": 400.0,
+                    "texture-height": 200.0
+                },
+                {
+                    "type": "text",
+                    "update-order": 0,
+                    "moji-path": "rom:/Assets/Textures/moji.png",
+                    "init-text": "¤¿¤¤¤«¤ó",
+                    "init-size": [
+                        40.0,
+                        40.0
+                    ],
+                    "init-position": [
+                        -560.0,
+                        -100.0,
+                        0.0
+                    ],
+                    "init-color": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "ModeSelectInput"
+                },
+                {
+                    "type": "btnmap",
+                    "update-order": 0,
+                    "right": "button-mode-btn-ui",
+                    "down": "normal-mode-btn-ui",
+                    "default-select": true
+                }
+            ]
+        },
+        {
+            "ui-name": "button-mode-btn-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        -100.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/btn1.png",
+                    "texture-width": 400.0,
+                    "texture-height": 200.0
+                },
+                {
+                    "type": "text",
+                    "update-order": 0,
+                    "moji-path": "rom:/Assets/Textures/moji.png",
+                    "init-text": "¥Û©a¥¿¥ó",
+                    "init-size": [
+                        40.0,
+                        40.0
+                    ],
+                    "init-position": [
+                        -60.0,
+                        -100.0,
+                        0.0
+                    ],
+                    "init-color": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "ModeSelectInput"
+                },
+                {
+                    "type": "btnmap",
+                    "update-order": 0,
+                    "left": "joycon-mode-btn-ui",
+                    "right": "extra-mode-btn-ui",
+                    "down": "normal-mode-btn-ui",
+                    "default-select": false
+                }
+            ]
+        },
+        {
+            "ui-name": "extra-mode-btn-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        500.0,
+                        -100.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/btn1.png",
+                    "texture-width": 400.0,
+                    "texture-height": 200.0
+                },
+                {
+                    "type": "text",
+                    "update-order": 0,
+                    "moji-path": "rom:/Assets/Textures/moji.png",
+                    "init-text": "EXTRA",
+                    "init-size": [
+                        40.0,
+                        40.0
+                    ],
+                    "init-position": [
+                        420.0,
+                        -100.0,
+                        0.0
+                    ],
+                    "init-color": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "ModeSelectInput"
+                },
+                {
+                    "type": "btnmap",
+                    "update-order": 0,
+                    "left": "button-mode-btn-ui",
+                    "default-select": false
+                }
+            ]
+        },
+        {
+            "ui-name": "loadfade-left-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 10,
+                    "texture-path": "rom:/Assets/Textures/load-cloud-left.png",
+                    "texture-width": 1920.0,
+                    "texture-height": 1080.0
+                }
+            ]
+        },
+        {
+            "ui-name": "loadfade-right-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 10,
+                    "texture-path": "rom:/Assets/Textures/load-cloud-right.png",
+                    "texture-width": 1920.0,
+                    "texture-height": 1080.0
+                }
+            ]
+        }
+    ]
+}

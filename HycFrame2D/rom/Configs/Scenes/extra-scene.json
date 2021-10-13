@@ -1,0 +1,2364 @@
+{
+    "scene-name": "extra-scene",
+    "camera": [
+        0.0,
+        0.0,
+        1920.0,
+        1080.0
+    ],
+    "actor": [
+        {
+            "actor-name": "loading-interac-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "interaction",
+                    "update-order": 0,
+                    "init-func-name": "ExtraLoadFadeInit",
+                    "update-func-name": "ExtraLoadFadeUpdate",
+                    "destory-func-name": "ExtraLoadFadeDestory"
+                }
+            ]
+        },
+        {
+            "actor-name": "basic-sky-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        970.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/field-bit.png",
+                    "texture-width": 5760.0,
+                    "texture-height": 3240.0
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-1-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        -800.0,
+                        -400.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-2-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        -400.0,
+                        -400.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-3-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        400.0,
+                        -400.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-4-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        800.0,
+                        -400.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-5-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        -700.0,
+                        -200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-6-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        -300.0,
+                        -200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-7-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        500.0,
+                        -200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-8-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        900.0,
+                        -200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-9-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        -800.0,
+                        200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-10-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        -400.0,
+                        200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-11-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        400.0,
+                        200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-12-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        800.0,
+                        200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-13-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        -700.0,
+                        400.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-14-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        -300.0,
+                        400.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-15-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        500.0,
+                        400.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-cloud-16-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        900.0,
+                        400.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 800.0,
+                    "texture-height": 600.0
+                },
+                {
+                    "type": "animate",
+                    "update-order": 0,
+                    "animates": [
+                        {
+                            "animate-name": "active",
+                            "animate-path": "rom:/Assets/Textures/cloud-ani.png",
+                            "animate-stride": [
+                                0.25,
+                                0.25
+                            ],
+                            "max-count": 6,
+                            "repeat-flag": true,
+                            "frame-time": 0.3
+                        }
+                    ],
+                    "init-animate": "active"
+                }
+            ]
+        },
+        {
+            "actor-name": "base-stage-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 0,
+                    "texture-path": "rom:/Assets/Textures/extra-stage.png",
+                    "texture-width": 1600.0,
+                    "texture-height": 800.0
+                }
+            ]
+        },
+        {
+            "actor-name": "player-1-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        -400.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 1.0,
+                    "texture-height": 1.0
+                },
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "Player1Input"
+                },
+                {
+                    "type": "collision",
+                    "update-order": 0,
+                    "collision-type": "circle",
+                    "collision-size": [
+                        75.0,
+                        75.0
+                    ],
+                    "show-flag": false
+                }
+            ]
+        },
+        {
+            "actor-name": "player-2-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        400.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 1,
+                    "texture-path": "rom:/Assets/Textures/empty.png",
+                    "texture-width": 1.0,
+                    "texture-height": 1.0
+                },
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "Player2Input"
+                },
+                {
+                    "type": "collision",
+                    "update-order": 0,
+                    "collision-type": "circle",
+                    "collision-size": [
+                        75.0,
+                        75.0
+                    ],
+                    "show-flag": false
+                }
+            ]
+        },
+        {
+            "actor-name": "sun-1-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 2,
+                    "texture-path": "rom:/Assets/Textures/sun-small-bit.png",
+                    "texture-width": 50.0,
+                    "texture-height": 50.0
+                },
+                {
+                    "type": "collision",
+                    "update-order": 0,
+                    "collision-type": "circle",
+                    "collision-size": [
+                        20.0,
+                        20.0
+                    ],
+                    "show-flag": false
+                }
+            ]
+        },
+        {
+            "actor-name": "sun-2-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 2,
+                    "texture-path": "rom:/Assets/Textures/sun-small-bit.png",
+                    "texture-width": 50.0,
+                    "texture-height": 50.0
+                },
+                {
+                    "type": "collision",
+                    "update-order": 0,
+                    "collision-type": "circle",
+                    "collision-size": [
+                        20.0,
+                        20.0
+                    ],
+                    "show-flag": false
+                }
+            ]
+        },
+        {
+            "actor-name": "sun-3-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 2,
+                    "texture-path": "rom:/Assets/Textures/sun-small-bit.png",
+                    "texture-width": 50.0,
+                    "texture-height": 50.0
+                },
+                {
+                    "type": "collision",
+                    "update-order": 0,
+                    "collision-type": "circle",
+                    "collision-size": [
+                        20.0,
+                        20.0
+                    ],
+                    "show-flag": false
+                }
+            ]
+        },
+        {
+            "actor-name": "sun-4-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 2,
+                    "texture-path": "rom:/Assets/Textures/sun-small-bit.png",
+                    "texture-width": 50.0,
+                    "texture-height": 50.0
+                },
+                {
+                    "type": "collision",
+                    "update-order": 0,
+                    "collision-type": "circle",
+                    "collision-size": [
+                        20.0,
+                        20.0
+                    ],
+                    "show-flag": false
+                }
+            ]
+        },
+        {
+            "actor-name": "sun-5-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 2,
+                    "texture-path": "rom:/Assets/Textures/sun-small-bit.png",
+                    "texture-width": 50.0,
+                    "texture-height": 50.0
+                },
+                {
+                    "type": "collision",
+                    "update-order": 0,
+                    "collision-type": "circle",
+                    "collision-size": [
+                        20.0,
+                        20.0
+                    ],
+                    "show-flag": false
+                }
+            ]
+        },
+        {
+            "actor-name": "sun-6-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 2,
+                    "texture-path": "rom:/Assets/Textures/sun-small-bit.png",
+                    "texture-width": 50.0,
+                    "texture-height": 50.0
+                },
+                {
+                    "type": "collision",
+                    "update-order": 0,
+                    "collision-type": "circle",
+                    "collision-size": [
+                        20.0,
+                        20.0
+                    ],
+                    "show-flag": false
+                }
+            ]
+        },
+        {
+            "actor-name": "sun-7-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 2,
+                    "texture-path": "rom:/Assets/Textures/sun-small-bit.png",
+                    "texture-width": 50.0,
+                    "texture-height": 50.0
+                },
+                {
+                    "type": "collision",
+                    "update-order": 0,
+                    "collision-type": "circle",
+                    "collision-size": [
+                        20.0,
+                        20.0
+                    ],
+                    "show-flag": false
+                }
+            ]
+        },
+        {
+            "actor-name": "sun-8-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 2,
+                    "texture-path": "rom:/Assets/Textures/sun-small-bit.png",
+                    "texture-width": 50.0,
+                    "texture-height": 50.0
+                },
+                {
+                    "type": "collision",
+                    "update-order": 0,
+                    "collision-type": "circle",
+                    "collision-size": [
+                        20.0,
+                        20.0
+                    ],
+                    "show-flag": false
+                }
+            ]
+        },
+        {
+            "actor-name": "sun-9-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 2,
+                    "texture-path": "rom:/Assets/Textures/sun-small-bit.png",
+                    "texture-width": 50.0,
+                    "texture-height": 50.0
+                },
+                {
+                    "type": "collision",
+                    "update-order": 0,
+                    "collision-type": "circle",
+                    "collision-size": [
+                        20.0,
+                        20.0
+                    ],
+                    "show-flag": false
+                }
+            ]
+        },
+        {
+            "actor-name": "sun-10-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 2,
+                    "texture-path": "rom:/Assets/Textures/sun-small-bit.png",
+                    "texture-width": 50.0,
+                    "texture-height": 50.0
+                },
+                {
+                    "type": "collision",
+                    "update-order": 0,
+                    "collision-type": "circle",
+                    "collision-size": [
+                        20.0,
+                        20.0
+                    ],
+                    "show-flag": false
+                }
+            ]
+        },
+        {
+            "actor-name": "suns-manager-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "interaction",
+                    "update-order": 0,
+                    "init-func-name": "ExtraSunsInit",
+                    "update-func-name": "ExtraSunsUpdate",
+                    "destory-func-name": "ExtraSunsDestory"
+                }
+            ]
+        },
+        {
+            "actor-name": "houou-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        2200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 1,
+                    "texture-path": "rom:/Assets/Textures/houou-bit.png",
+                    "texture-width": 150.0,
+                    "texture-height": 100.0
+                }
+            ]
+        },
+        {
+            "actor-name": "houou-name-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        2200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 5,
+                    "texture-path": "rom:/Assets/Textures/houou-name.png",
+                    "texture-width": 500.0,
+                    "texture-height": 145.0
+                }
+            ]
+        },
+        {
+            "actor-name": "ra-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        2200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 1,
+                    "texture-path": "rom:/Assets/Textures/ra-bit.png",
+                    "texture-width": 150.0,
+                    "texture-height": 100.0
+                }
+            ]
+        },
+        {
+            "actor-name": "ra-name-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        2200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 5,
+                    "texture-path": "rom:/Assets/Textures/ra-name.png",
+                    "texture-width": 500.0,
+                    "texture-height": 145.0
+                }
+            ]
+        },
+        {
+            "actor-name": "heriosu-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        2200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 1,
+                    "texture-path": "rom:/Assets/Textures/heriosu-bit.png",
+                    "texture-width": 150.0,
+                    "texture-height": 100.0
+                }
+            ]
+        },
+        {
+            "actor-name": "heriosu-name-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        2200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 5,
+                    "texture-path": "rom:/Assets/Textures/heriosu-name.png",
+                    "texture-width": 500.0,
+                    "texture-height": 145.0
+                }
+            ]
+        },
+        {
+            "actor-name": "amatera-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        2200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 1,
+                    "texture-path": "rom:/Assets/Textures/amatera-bit.png",
+                    "texture-width": 150.0,
+                    "texture-height": 100.0
+                }
+            ]
+        },
+        {
+            "actor-name": "amatera-name-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        2200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 5,
+                    "texture-path": "rom:/Assets/Textures/amatera-name.png",
+                    "texture-width": 500.0,
+                    "texture-height": 145.0
+                }
+            ]
+        },
+        {
+            "actor-name":"gods-manager-actor",
+            "update-order":0,
+            "parent":null,
+            "components":[
+                {
+                    "type": "interaction",
+                    "update-order": 0,
+                    "init-func-name": "GodsInit",
+                    "update-func-name": "GodsUpdate",
+                    "destory-func-name": "GodsDestory"
+                }
+            ]
+        }
+    ],
+    "ui": [
+        {
+            "ui-name": "loadfade-left-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 10,
+                    "texture-path": "rom:/Assets/Textures/load-cloud-left.png",
+                    "texture-width": 1920.0,
+                    "texture-height": 1080.0
+                }
+            ]
+        },
+        {
+            "ui-name": "loadfade-right-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 10,
+                    "texture-path": "rom:/Assets/Textures/load-cloud-right.png",
+                    "texture-width": 1920.0,
+                    "texture-height": 1080.0
+                }
+            ]
+        },
+        {
+            "ui-name": "heart-left-1-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        -800.0,
+                        -100.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        90.0
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 0,
+                    "texture-path": "rom:/Assets/Textures/heart-bit.png",
+                    "texture-width": 80.0,
+                    "texture-height": 80.0
+                }
+            ]
+        },
+        {
+            "ui-name": "heart-left-2-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        -800.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        90.0
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 0,
+                    "texture-path": "rom:/Assets/Textures/heart-bit.png",
+                    "texture-width": 80.0,
+                    "texture-height": 80.0
+                }
+            ]
+        },
+        {
+            "ui-name": "heart-left-3-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        -800.0,
+                        100.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        90.0
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 0,
+                    "texture-path": "rom:/Assets/Textures/heart-bit.png",
+                    "texture-width": 80.0,
+                    "texture-height": 80.0
+                }
+            ]
+        },
+        {
+            "ui-name": "heart-right-1-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        800.0,
+                        100.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        -90.0
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 0,
+                    "texture-path": "rom:/Assets/Textures/heart-bit.png",
+                    "texture-width": 80.0,
+                    "texture-height": 80.0
+                }
+            ]
+        },
+        {
+            "ui-name": "heart-right-2-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        800.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        -90.0
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 0,
+                    "texture-path": "rom:/Assets/Textures/heart-bit.png",
+                    "texture-width": 80.0,
+                    "texture-height": 80.0
+                }
+            ]
+        },
+        {
+            "ui-name": "heart-right-3-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        800.0,
+                        -100.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        -90.0
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 0,
+                    "texture-path": "rom:/Assets/Textures/heart-bit.png",
+                    "texture-width": 80.0,
+                    "texture-height": 80.0
+                }
+            ]
+        },
+        {
+            "ui-name": "life-manager-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "interaction",
+                    "update-order": 0,
+                    "init-func-name": "LifeUiInit",
+                    "update-func-name": "LifeUiUpdate",
+                    "destory-func-name": "LifeUiDestory"
+                },
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "LifeUiInput"
+                }
+            ]
+        },
+        {
+            "ui-name": "victory-board-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        2200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 1,
+                    "texture-path": "rom:/Assets/Textures/victory-bit.png",
+                    "texture-width": 800.0,
+                    "texture-height": 800.0
+                }
+            ]
+        },
+        {
+            "ui-name": "lose-board-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        2200.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 1,
+                    "texture-path": "rom:/Assets/Textures/lose-bit.png",
+                    "texture-width": 800.0,
+                    "texture-height": 800.0
+                }
+            ]
+        }
+    ]
+}

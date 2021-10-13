@@ -1,0 +1,248 @@
+{
+    "scene-name": "story-scene",
+    "camera": [
+        0.0,
+        0.0,
+        1920.0,
+        1080.0
+    ],
+    "actor": [
+        {
+            "actor-name": "story-bg-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -10,
+                    "texture-path": "rom:/Assets/Textures/bg-mode.png",
+                    "texture-width": 1920.0,
+                    "texture-height": 1080.0
+                }
+            ]
+        },
+        {
+            "actor-name": "story-actor",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        -50.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/story.png",
+                    "texture-width": 1500.0,
+                    "texture-height": 1000.0
+                }
+            ]
+        }
+    ],
+    "ui": [
+        {
+            "ui-name": "back-btn-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        450.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/btn1.png",
+                    "texture-width": 400.0,
+                    "texture-height": 200.0
+                },
+                {
+                    "type": "text",
+                    "update-order": 0,
+                    "moji-path": "rom:/Assets/Textures/moji.png",
+                    "init-text": "¤â¤È©a¤ë",
+                    "init-size": [
+                        40.0,
+                        40.0
+                    ],
+                    "init-position": [
+                        -60.0,
+                        450.0,
+                        0.0
+                    ],
+                    "init-color": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "StoryUiInput"
+                }
+            ]
+        },
+        {
+            "ui-name": "loading-interac-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "interaction",
+                    "update-order": 0,
+                    "init-func-name": "StoryLoadFadeInit",
+                    "update-func-name": "StoryLoadFadeUpdate",
+                    "destory-func-name": "StoryLoadFadeDestory"
+                }
+            ]
+        },
+        {
+            "ui-name": "loadfade-left-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 10,
+                    "texture-path": "rom:/Assets/Textures/load-cloud-left.png",
+                    "texture-width": 1920.0,
+                    "texture-height": 1080.0
+                }
+            ]
+        },
+        {
+            "ui-name": "loadfade-right-ui",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": 10,
+                    "texture-path": "rom:/Assets/Textures/load-cloud-right.png",
+                    "texture-width": 1920.0,
+                    "texture-height": 1080.0
+                }
+            ]
+        }
+    ]
+}

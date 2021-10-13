@@ -1,0 +1,14 @@
+1. scene's name:
+    [scene's name]-scene
+    example : load-scene title-scene
+
+2. object's name:
+    [object's name]-[actor/ui]
+    example : test-actor hp-bar-ui
+
+3. component's name:
+    [owner's name]-[component type]
+    example : test-actor-sprite hp-bar-ui-transform
+
+4. if kana in json:
+    use gb 2312!!!(or shift jis?)
