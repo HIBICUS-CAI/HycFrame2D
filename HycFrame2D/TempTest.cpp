@@ -84,9 +84,9 @@ void TestUiInit(UInteractionComponent* _aitc)
     P_LOG(LOG_DEBUG, "ui init test!!!!!!!!\n");
 }
 
-void TestUiUpdate(UInteractionComponent* _aitc, float _deltatime)
+void TestUiUpdate(UInteractionComponent* _uitc, float _deltatime)
 {
-    auto scene = _aitc->GetUiObjOwner()->GetSceneNodePtr();
+    auto scene = _uitc->GetUiObjOwner()->GetSceneNodePtr();
     if (GetControllerTrigger(GP_RIGHTFORESHDBTN))
     {
         if (scene->GetUiObject("test-ui")->IsObjectActive() ==
@@ -100,6 +100,16 @@ void TestUiUpdate(UInteractionComponent* _aitc, float _deltatime)
         {
             scene->GetUiObject("test-ui")->
                 SetObjectActive(STATUS::ACTIVE);
+        }
+    }
+
+    if (GetControllerTrigger(GP_RIGHTMENUBTN))
+    {
+        UTextComponent* utc = _uitc->GetUiObjOwner()->
+            GetUComponent<UTextComponent>(COMP_TYPE::UTEXT);
+        if (utc)
+        {
+            utc->ChangeTextString("TEXTをへんこうしました!");
         }
     }
 }
