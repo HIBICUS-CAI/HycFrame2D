@@ -1,4 +1,5 @@
 #include "TempTest.h"
+#include "sound.h"
 
 void TempTestRegister(ObjectFactory* _factory)
 {
@@ -34,6 +35,7 @@ void TempTestRegister(ObjectFactory* _factory)
 void TestInit(AInteractionComponent* _aitc)
 {
     P_LOG(LOG_DEBUG, "init test!!!!!!!!\n");
+    PlayBGM("test-bgm");
 }
 
 void TestUpdate(AInteractionComponent* _aitc, float _deltatime)

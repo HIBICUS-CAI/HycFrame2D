@@ -2,8 +2,8 @@
     "scene-name": "load-scene",
     "sound": [
         {
-            "name": "loading",
-            "path": "rom:/Assets/Sounds/decision24.wav"
+            "name": "test-bgm",
+            "path": "rom:/Assets/Sounds/bgm-success.wav"
         }
     ],
     "ui": [
