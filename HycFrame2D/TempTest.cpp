@@ -25,6 +25,8 @@ void TempTestRegister(ObjectFactory* _factory)
         std::make_pair(FUNC_NAME(TestUiDestory), TestUiDestory));
     aInputPoolPtr->insert(
         std::make_pair(FUNC_NAME(TempMove), TempMove));
+    aInputPoolPtr->insert(
+        std::make_pair(FUNC_NAME(SceneSwitch), SceneSwitch));
     uInputPoolPtr->insert(
         std::make_pair(FUNC_NAME(TempUiInput), TempUiInput));
 }
@@ -248,6 +250,55 @@ void TempMove(AInputComponent* _aic, float _deltatime)
             owner->GetSceneNodePtr()->GetCamera()->
                 TranslateCameraPos(MakeFloat2(
                     0.f, 200.f * _deltatime));
+        }
+    }
+}
+
+void SceneSwitch(AInputComponent* _aic, float _deltatime)
+{
+    std::string sceneName = _aic->GetActorObjOwner()->
+        GetSceneNodePtr()->GetSceneName();
+    bool next = GetControllerTrigger(GP_RIGHTSTICKBTN);
+    bool previous = GetControllerTrigger(GP_LEFTSTICKBTN);
+    SceneManager* manager = _aic->GetActorObjOwner()->
+        GetSceneNodePtr()->GetSceneManagerPtr();
+    if (sceneName == "first-scene")
+    {
+        if (next)
+        {
+            manager->LoadSceneNode("second-scene",
+                "rom:/Configs/Scenes/2-scene.json");
+        }
+        if (previous)
+        {
+            manager->LoadSceneNode("third-scene",
+                "rom:/Configs/Scenes/3-scene.json");
+        }
+    }
+    else if (sceneName == "second-scene")
+    {
+        if (next)
+        {
+            manager->LoadSceneNode("third-scene",
+                "rom:/Configs/Scenes/3-scene.json");
+        }
+        if (previous)
+        {
+            manager->LoadSceneNode("first-scene",
+                "rom:/Configs/Scenes/1-scene.json");
+        }
+    }
+    else if (sceneName == "third-scene")
+    {
+        if (next)
+        {
+            manager->LoadSceneNode("first-scene",
+                "rom:/Configs/Scenes/1-scene.json");
+        }
+        if (previous)
+        {
+            manager->LoadSceneNode("second-scene",
+                "rom:/Configs/Scenes/2-scene.json");
         }
     }
 }

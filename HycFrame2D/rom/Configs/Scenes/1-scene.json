@@ -8,6 +8,18 @@
     ],
     "actor": [
         {
+            "actor-name": "scene-switch",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "SceneSwitch"
+                }
+            ]
+        },
+        {
             "actor-name": "test",
             "update-order": 0,
             "parent": null,

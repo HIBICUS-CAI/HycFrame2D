@@ -21,3 +21,5 @@ void TestUiDestory(UInteractionComponent* _aitc);
 void TempUiInput(UInputComponent* _uic, float _deltatime);
 
 void TempMove(AInputComponent* _aic, float _deltatime);
+
+void SceneSwitch(AInputComponent* _aic, float _deltatime);

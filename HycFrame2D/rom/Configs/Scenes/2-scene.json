@@ -2,6 +2,18 @@
     "scene-name": "second-scene",
     "actor": [
         {
+            "actor-name": "scene-switch",
+            "update-order": 0,
+            "parent": null,
+            "components": [
+                {
+                    "type": "input",
+                    "update-order": 0,
+                    "func-name": "SceneSwitch"
+                }
+            ]
+        },
+        {
             "actor-name": "second",
             "update-order": 0,
             "parent": null,
