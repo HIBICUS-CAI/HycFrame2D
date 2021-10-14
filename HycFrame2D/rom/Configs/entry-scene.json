@@ -1,4 +1,4 @@
 {
-    "entry-scene-name": "title-scene",
-    "entry-scene-path": "rom:/Configs/Scenes/title-scene.json"
+    "entry-scene-name": "first-scene",
+    "entry-scene-path": "rom:/Configs/Scenes/1-scene.json"
 }

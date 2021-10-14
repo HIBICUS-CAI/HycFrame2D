@@ -40,7 +40,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": 0,
-                    "texture-path": "rom:/Assets/Textures/texture.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 200.0,
                     "texture-height": 200.0
                 },
@@ -52,7 +52,7 @@
                         100.0,
                         100.0
                     ],
-                    "show-flag": false
+                    "show-flag": true
                 },
                 {
                     "type": "input",
@@ -74,7 +74,7 @@
                     "animates": [
                         {
                             "animate-name": "number",
-                            "animate-path": "rom:/Assets/Textures/number.tga",
+                            "animate-path": "rom:/Assets/Textures/number.png",
                             "animate-stride": [
                                 0.2,
                                 0.2
@@ -85,7 +85,7 @@
                         },
                         {
                             "animate-name": "run",
-                            "animate-path": "rom:/Assets/Textures/runman.tga",
+                            "animate-path": "rom:/Assets/Textures/runman.png",
                             "animate-stride": [
                                 0.2,
                                 0.5
@@ -139,7 +139,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -151,7 +151,7 @@
                         150.0,
                         50.0
                     ],
-                    "show-flag": false
+                    "show-flag": true
                 }
             ]
         },
@@ -188,7 +188,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -200,7 +200,7 @@
                         150.0,
                         50.0
                     ],
-                    "show-flag": false
+                    "show-flag": true
                 }
             ]
         }
@@ -239,7 +239,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -289,7 +289,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -314,15 +314,15 @@
                 {
                     "type": "text",
                     "update-order": 0,
-                    "moji-path": "rom:/Assets/Textures/moji.tga",
-                    "init-text": "it's a great day, \nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ \nï¿½ï¿½ï¿½ç¤¦ï¿½Ï¤ï¿½ï¿½ï¿½ï¿½Æ¤ó¤­¤Æ©aï¿½ï¿½ï¿½ï¿½ \nï¿½ï¿½ï¿½ï¿½ï¿½Ï©aï¿½ï¿½ nice \n 0321054.34654",
+                    "moji-path": "rom:/Assets/Textures/moji.png",
+                    "init-text": "it's a great day, \n¤ª¤Ï¤è¤¦¤³©a¤µ©a¤¤¤Þ¤¹! \n¤­¤ç¤¦¤Ï¤µ¤à¤¤¤Æ©a¤¹ \n¥Õ©a¥ë¥Õ©a¥ë¥Ò¡ã¥«¥Á¥å¥¦ nice \n 0321054.34654",
                     "init-size": [
-                        30.0,
-                        30.0
+                        40.0,
+                        40.0
                     ],
                     "init-position": [
                         -940.0,
-                        -520.0,
+                        -320.0,
                         0.0
                     ],
                     "init-color": [

@@ -9,7 +9,9 @@
 
 #include "ObjectFactory.h"
 
+#include "TempTest.h"
+
 void RegisterAllFuncs(ObjectFactory* _factory)
 {
-
+    TempTestRegister(_factory);
 }

@@ -1,0 +1,70 @@
+{
+    "scene-name": "load-scene",
+    "sound": [
+        {
+            "name": "loading",
+            "path": "rom:/Assets/Sounds/decision24.wav"
+        }
+    ],
+    "ui": [
+        {
+            "ui-name": "load",
+            "update-order": 0,
+            "components": [
+                {
+                    "type": "transform",
+                    "update-order": -1,
+                    "init-value": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "rotation": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "scale": [
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                {
+                    "type": "sprite",
+                    "update-order": 0,
+                    "draw-order": -2,
+                    "texture-path": "rom:/Assets/Textures/player.png",
+                    "texture-width": 1920.0,
+                    "texture-height": 1080.0
+                },
+                {
+                    "type": "text",
+                    "update-order": 0,
+                    "moji-path": "rom:/Assets/Textures/moji.png",
+                    "init-text": "NOW LOADING ...",
+                    "init-size": [
+                        100.0,
+                        100.0
+                    ],
+                    "init-position": [
+                        -550.0,
+                        400.0,
+                        0.0
+                    ],
+                    "init-color": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                }
+            ]
+        }
+    ]
+}

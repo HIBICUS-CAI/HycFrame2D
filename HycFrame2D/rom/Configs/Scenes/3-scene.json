@@ -34,11 +34,12 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/moji.tga",
+                    "texture-path": "rom:/Assets/Textures/moji.png",
                     "texture-width": 950.0,
                     "texture-height": 500.0
                 }
             ]
         }
-    ]
+    ],
+    "ui": []
 }

@@ -38,14 +38,14 @@ void ACollisionComponent::CompInit()
 {
     ID3D11ShaderResourceView* exist =
         GetActorObjOwner()->GetSceneNodePtr()->
-        CheckIfTexExist("rom:/Assets/Textures/collision-circ.tga");
+        CheckIfTexExist("rom:/Assets/Textures/collision-circ.png");
     if (!exist)
     {
         mCircleTexture = LoadTexture(
-            "rom:/Assets/Textures/collision-circ.tga");
+            "rom:/Assets/Textures/collision-circ.png");
         GetActorObjOwner()->GetSceneNodePtr()->
             InsertNewTex(
-                "rom:/Assets/Textures/collision-circ.tga",
+                "rom:/Assets/Textures/collision-circ.png",
                 mCircleTexture);
     }
     else
@@ -55,14 +55,14 @@ void ACollisionComponent::CompInit()
 
     exist =
         GetActorObjOwner()->GetSceneNodePtr()->
-        CheckIfTexExist("rom:/Assets/Textures/collision-rect.tga");
+        CheckIfTexExist("rom:/Assets/Textures/collision-rect.png");
     if (!exist)
     {
         mRectangleTexture = LoadTexture(
-            "rom:/Assets/Textures/collision-rect.tga");
+            "rom:/Assets/Textures/collision-rect.png");
         GetActorObjOwner()->GetSceneNodePtr()->
             InsertNewTex(
-                "rom:/Assets/Textures/collision-rect.tga",
+                "rom:/Assets/Textures/collision-rect.png",
                 mRectangleTexture);
     }
     else

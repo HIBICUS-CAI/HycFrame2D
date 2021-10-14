@@ -646,7 +646,7 @@ void DxHelper::ClearBuffer()
     mImmediateContextPtr->OMSetRenderTargets(
         1, &mRenderTargetViewPtr, mDepthStencilViewPtr);
     mImmediateContextPtr->ClearRenderTargetView(
-        mRenderTargetViewPtr, DirectX::Colors::Black);
+        mRenderTargetViewPtr, DirectX::Colors::DarkGreen);
     mImmediateContextPtr->ClearDepthStencilView(
         mDepthStencilViewPtr, D3D11_CLEAR_DEPTH, 1.f, 0);
 }

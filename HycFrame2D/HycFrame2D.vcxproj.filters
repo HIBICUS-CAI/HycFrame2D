@@ -43,6 +43,9 @@
     <Filter Include="02_FrameContent\Scene">
       <UniqueIdentifier>{1026aeed-66c4-4e66-a681-4686b9607b5c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="03_ObjectFunc\TempExample">
+      <UniqueIdentifier>{f8b78964-b2cc-46e1-8b97-000e49cd12a3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BasicInit_LowLevel\DxHelper.cpp">
@@ -152,6 +155,9 @@
     </ClCompile>
     <ClCompile Include="FuncsRegister.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TempTest.cpp">
+      <Filter>03_ObjectFunc\TempExample</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -283,6 +289,9 @@
     </ClInclude>
     <ClInclude Include="FuncsResigter.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TempTest.h">
+      <Filter>03_ObjectFunc\TempExample</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

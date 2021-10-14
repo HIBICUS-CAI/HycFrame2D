@@ -34,7 +34,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/bg.tga",
+                    "texture-path": "rom:/Assets/Textures/runman.png",
                     "texture-width": 450.0,
                     "texture-height": 450.0
                 }
@@ -75,7 +75,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -126,7 +126,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -178,7 +178,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -230,7 +230,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -281,7 +281,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -333,7 +333,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -386,7 +386,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -439,7 +439,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -491,7 +491,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -543,7 +543,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -596,7 +596,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -649,7 +649,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -701,7 +701,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -752,7 +752,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -804,7 +804,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },
@@ -856,7 +856,7 @@
                     "type": "sprite",
                     "update-order": 0,
                     "draw-order": -2,
-                    "texture-path": "rom:/Assets/Textures/player.tga",
+                    "texture-path": "rom:/Assets/Textures/player.png",
                     "texture-width": 150.0,
                     "texture-height": 50.0
                 },

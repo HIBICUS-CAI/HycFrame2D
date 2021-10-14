@@ -18,7 +18,7 @@ bool CreateWndAndInitInput(HINSTANCE hInstance, int cmdShow)
         return false;
     }
     if (!WindowInterface::CreateInitWindow("a test window",
-        hInstance, cmdShow, 1920, 1080, true))
+        hInstance, cmdShow, 1280, 720, false))
     {
         return false;
     }
@@ -35,10 +35,10 @@ float GoRunLoopProcess()
     float timer = 0.f;
     timer = ((float)(GetTickCount64() - g_InitTime)) / 1000.f;
 
-    /*if (InputInterface::IsKeyPushedInSingle(KB_ESCAPE))
+    if (InputInterface::IsKeyPushedInSingle(KB_ESCAPE))
     {
         g_ShouldQuit = true;
-    }*/
+    }
 
     return timer;
 }
