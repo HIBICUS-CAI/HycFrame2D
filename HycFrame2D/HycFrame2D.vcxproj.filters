@@ -22,9 +22,6 @@
     <Filter Include="02_FrameContent">
       <UniqueIdentifier>{05859a53-c28e-4599-8efc-2b4534bdf5a0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="03_ObjectFunc">
-      <UniqueIdentifier>{477d314c-c1e0-4263-b585-0907439015ee}</UniqueIdentifier>
-    </Filter>
     <Filter Include="02_FrameContent\Common">
       <UniqueIdentifier>{d7b9960f-fb66-4cad-8f06-7e6547403aa6}</UniqueIdentifier>
     </Filter>
@@ -42,6 +39,9 @@
     </Filter>
     <Filter Include="02_FrameContent\Scene">
       <UniqueIdentifier>{1026aeed-66c4-4e66-a681-4686b9607b5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_ScriptFunc">
+      <UniqueIdentifier>{477d314c-c1e0-4263-b585-0907439015ee}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -148,61 +148,61 @@
       <Filter>02_FrameContent\Scene</Filter>
     </ClCompile>
     <ClCompile Include="AimPointAction.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="ArrowAction.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="BowAction.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="BowLoadingFade.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="CloudAction.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="ExtraGods.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="ExtraLife.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="ExtraLoadingFade.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="ExtraPlayerInput.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="ExtraSunManager.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="FieldAction.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="ManualAction.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="ModeSelectButton.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="ResultLoadingFade.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="ResultSelectInput.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="StoryAction.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="SunsManager.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="TempBtnCmd.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="TitleButton.cpp">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
@@ -339,61 +339,61 @@
       <Filter>02_FrameContent\Scene</Filter>
     </ClInclude>
     <ClInclude Include="AimPointAction.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="ArrowAction.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="BowAction.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="BowLoadingFade.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="CloudAction.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="ExtraGods.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="ExtraLife.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="ExtraLoadingFade.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="ExtraPlayerInput.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="ExtraSunManager.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="FieldAction.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="ManualAction.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="ModeSelectButton.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="ResultLoadingFade.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="ResultSelectInput.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="StoryAction.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="SunsManager.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="TempBtnCmd.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="TitleButton.h">
-      <Filter>03_ObjectFunc</Filter>
+      <Filter>03_ScriptFunc</Filter>
     </ClInclude>
     <ClInclude Include="FuncsResigter.h">
       <Filter>Header Files</Filter>
