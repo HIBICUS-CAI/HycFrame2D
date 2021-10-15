@@ -22,9 +22,6 @@
     <Filter Include="02_FrameContent">
       <UniqueIdentifier>{05859a53-c28e-4599-8efc-2b4534bdf5a0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="03_ObjectFunc">
-      <UniqueIdentifier>{477d314c-c1e0-4263-b585-0907439015ee}</UniqueIdentifier>
-    </Filter>
     <Filter Include="02_FrameContent\Common">
       <UniqueIdentifier>{d7b9960f-fb66-4cad-8f06-7e6547403aa6}</UniqueIdentifier>
     </Filter>
@@ -43,7 +40,10 @@
     <Filter Include="02_FrameContent\Scene">
       <UniqueIdentifier>{1026aeed-66c4-4e66-a681-4686b9607b5c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="03_ObjectFunc\TempExample">
+    <Filter Include="03_ScriptFunc">
+      <UniqueIdentifier>{477d314c-c1e0-4263-b585-0907439015ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_ScriptFunc\TempExample">
       <UniqueIdentifier>{f8b78964-b2cc-46e1-8b97-000e49cd12a3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -157,7 +157,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TempTest.cpp">
-      <Filter>03_ObjectFunc\TempExample</Filter>
+      <Filter>03_ScriptFunc\TempExample</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -291,7 +291,7 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TempTest.h">
-      <Filter>03_ObjectFunc\TempExample</Filter>
+      <Filter>03_ScriptFunc\TempExample</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
