@@ -9,8 +9,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_WindowManager", "04_Wind
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HycFrame2D", "HycFrame2D\HycFrame2D.vcxproj", "{6B3F882A-E313-44F3-95C6-43F94B054465}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_DirectXTK", "02_DTK\DirectXTK_Desktop_2019_Win10.vcxproj", "{E0B52AE7-E160-4D32-BF3F-910B785E5A8E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "References", "References", "{4F4364B4-2BB3-47EF-A8A1-76F0011F7BD3}"
 EndProject
 Global
@@ -31,10 +29,6 @@ Global
 		{6B3F882A-E313-44F3-95C6-43F94B054465}.Debug|x64.Build.0 = Debug|x64
 		{6B3F882A-E313-44F3-95C6-43F94B054465}.Release|x64.ActiveCfg = Release|x64
 		{6B3F882A-E313-44F3-95C6-43F94B054465}.Release|x64.Build.0 = Release|x64
-		{E0B52AE7-E160-4D32-BF3F-910B785E5A8E}.Debug|x64.ActiveCfg = Debug|x64
-		{E0B52AE7-E160-4D32-BF3F-910B785E5A8E}.Debug|x64.Build.0 = Debug|x64
-		{E0B52AE7-E160-4D32-BF3F-910B785E5A8E}.Release|x64.ActiveCfg = Release|x64
-		{E0B52AE7-E160-4D32-BF3F-910B785E5A8E}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,7 +36,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{59009CC8-769F-4BDB-9334-A8C3F450FA68} = {4F4364B4-2BB3-47EF-A8A1-76F0011F7BD3}
 		{948FF8DD-8FB2-4E3E-8AB2-F9F702F9C501} = {4F4364B4-2BB3-47EF-A8A1-76F0011F7BD3}
-		{E0B52AE7-E160-4D32-BF3F-910B785E5A8E} = {4F4364B4-2BB3-47EF-A8A1-76F0011F7BD3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F7F1993-70BA-47DA-8FEA-2E20A220FDC1}

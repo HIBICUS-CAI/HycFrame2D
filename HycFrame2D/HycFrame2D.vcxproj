@@ -116,7 +116,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)02_DTK\Inc;$(SolutionDir)03_InputDevice;$(SolutionDir)04_WindowManager;$(ProjectDir)HighFrame;$(ProjectDir)MiddleFunctions;$(ProjectDir)BasicInit_LowLevel;$(ProjectDir)ThirdParty\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)03_InputDevice;$(SolutionDir)04_WindowManager;$(ProjectDir)HighFrame;$(ProjectDir)MiddleFunctions;$(ProjectDir)BasicInit_LowLevel;$(ProjectDir)ThirdParty\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -136,7 +136,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)02_DTK\Inc;$(SolutionDir)03_InputDevice;$(SolutionDir)04_WindowManager;$(ProjectDir)HighFrame;$(ProjectDir)MiddleFunctions;$(ProjectDir)BasicInit_LowLevel;$(ProjectDir)ThirdParty\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)03_InputDevice;$(SolutionDir)04_WindowManager;$(ProjectDir)HighFrame;$(ProjectDir)MiddleFunctions;$(ProjectDir)BasicInit_LowLevel;$(ProjectDir)ThirdParty\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -151,9 +151,6 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\02_DTK\DirectXTK_Desktop_2019_Win10.vcxproj">
-      <Project>{e0b52ae7-e160-4d32-bf3f-910b785e5a8e}</Project>
-    </ProjectReference>
     <ProjectReference Include="..\03_InputDevice\03_InputDevice.vcxproj">
       <Project>{59009cc8-769f-4bdb-9334-a8c3f450fa68}</Project>
     </ProjectReference>
@@ -210,6 +207,7 @@
     <ClCompile Include="MiddleFunctions\SoundHelper.cpp" />
     <ClCompile Include="MiddleFunctions\SpriteHelper.cpp" />
     <ClCompile Include="MiddleFunctions\TextureHelper.cpp" />
+    <ClCompile Include="MiddleFunctions\WICTextureLoader11.cpp" />
     <ClCompile Include="ModeSelectButton.cpp" />
     <ClCompile Include="ResultLoadingFade.cpp" />
     <ClCompile Include="ResultSelectInput.cpp" />
@@ -274,6 +272,7 @@
     <ClInclude Include="MiddleFunctions\SpriteHelper.h" />
     <ClInclude Include="MiddleFunctions\texture.h" />
     <ClInclude Include="MiddleFunctions\TextureHelper.h" />
+    <ClInclude Include="MiddleFunctions\WICTextureLoader11.h" />
     <ClInclude Include="ModeSelectButton.h" />
     <ClInclude Include="ResultLoadingFade.h" />
     <ClInclude Include="ResultSelectInput.h" />
