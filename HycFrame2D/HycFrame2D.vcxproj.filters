@@ -159,6 +159,9 @@
     <ClCompile Include="TempTest.cpp">
       <Filter>03_ScriptFunc\TempExample</Filter>
     </ClCompile>
+    <ClCompile Include="MiddleFunctions\WICTextureLoader11.cpp">
+      <Filter>01_MiddleFunc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicInit_LowLevel\DxHelper.h">
@@ -292,6 +295,9 @@
     </ClInclude>
     <ClInclude Include="TempTest.h">
       <Filter>03_ScriptFunc\TempExample</Filter>
+    </ClInclude>
+    <ClInclude Include="MiddleFunctions\WICTextureLoader11.h">
+      <Filter>01_MiddleFunc</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
